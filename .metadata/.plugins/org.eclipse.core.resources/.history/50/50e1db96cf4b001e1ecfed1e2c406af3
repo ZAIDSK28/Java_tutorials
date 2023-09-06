@@ -1,0 +1,9 @@
+package com.student_manage;
+
+public class StudentDao {
+	
+	public static void InsertintoStudent(Student st) {
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package NQT;
+
+import java.util.Scanner;
+
+public class xyz {
+	
+	    public static void main (String[] args) {
+//	    	 Scanner sc=new Scanner(System.in);
+//		      System.out.println("Enter initial population followed by Number of days ");
+//		      int N=sc.nextInt();
+//		     int X=sc.nextInt();
+//		    int Pop=N;
+//		    while(X!=0) {
+//		    	Pop =3*Pop;
+//		    	X--;
+//		    }
+//		    System.out.println(Pop);
+//		    
+	    
+	    	 
+	    	        Scanner sc= new Scanner(System.in);
+	    	        System.out.println("1");
+	    	        int X1= sc.nextInt();
+	    	      int Y1= sc.nextInt();
+	    	      int R1= sc.nextInt();
+	    	      System.out.println("2");
+	    	      int X2= sc.nextInt();
+	    	      int Y2= sc.nextInt();
+	    	      int R2= sc.nextInt();
+	    	        
+	    	        int firstc = (X1*X1)+(Y1*Y1);
+	    	        int secondc = (int)Math.sqrt((Math.pow((X2-X1),2)+Math.pow((Y2-Y1),2)));
+	    	        int ThirdC = R2+X2;
+
+	    	        int numberofpoints= (firstc+secondc+ThirdC)*2;
+	    	        System.out.println(numberofpoints);
+	    	    }
+	}
+
+

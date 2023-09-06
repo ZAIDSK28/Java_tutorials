@@ -1,0 +1,21 @@
+package NQT;
+
+import java.util.Scanner;
+
+public class xyz {
+	
+	    public static void main (String[] args) {
+	      Scanner sc=new Scanner(System.in);
+	    int N=sc.nextInt();
+	     int X=sc.nextInt();
+	    int Pop=0;
+	    while(X>0) {
+	    	Pop = Pop + (3*N);
+	    	X--;
+	    }
+	    System.out.println(pop);
+	    
+	    
+	}
+
+}

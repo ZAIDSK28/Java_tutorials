@@ -1,0 +1,12 @@
+package com.student_manage;
+
+import com.sql.jdbc.Connection;
+
+public class StudentDao {
+	
+	public static void InsertintoStudent(Student st) {
+		
+		Connection
+	}
+
+}

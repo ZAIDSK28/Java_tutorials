@@ -1,0 +1,32 @@
+package com.student_manage;
+
+import java.sql.*;
+
+public class StudentDao {
+	
+	public static boolean InsertintoStudent(Student st) {
+		boolean f = false;
+		
+		try {
+			
+			// JDBC code ....
+			Connection Con = CP.CreacteC();
+			String q = "insert into students(sname , sphone , scity ) values(? , ? , ?)";
+			// prepared Statement
+			PreparedStatement pstmt =Con.prepareStatement(q);
+			// set values of parameters 
+			pstmt.setString(1, st.getStudnet_name());
+			pstmt.setString(2, st.getStudent_phone());
+			pstmt.setString(3, st.getStudent_city());
+			
+			//Execute .....
+			pstmt.executeUpdate();
+			f= true;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return f;
+	}
+
+}
